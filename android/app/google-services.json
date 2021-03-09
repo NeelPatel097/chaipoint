@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "892767619778",
+    "project_id": "chai-point-ff49a",
+    "storage_bucket": "chai-point-ff49a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892767619778:android:37a49234b2b30c5e3d495b",
+        "android_client_info": {
+          "package_name": "com.patel.chaipoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892767619778-8brj7pasm4jv6b9kraaat1p3oud67m9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU63HasqNLY_Wc85B8gCvYLdme_sAqY7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892767619778-8brj7pasm4jv6b9kraaat1p3oud67m9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
