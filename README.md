@@ -1,6 +1,6 @@
 # chaipoint
 
-A chai ordering application
+A chai listing application
 
 ## Getting Started
 
