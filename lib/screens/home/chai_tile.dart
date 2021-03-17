@@ -17,6 +17,7 @@ class ChaiTile extends StatelessWidget {
           leading: CircleAvatar(
             radius: 25.0,
             backgroundColor: Colors.brown[chai.strength],
+            backgroundImage: AssetImage('assets/coffee_icon.png'),
           ),
           title: Text(chai.name),
           subtitle: Text('Takes ${chai.sugars} sugars'),

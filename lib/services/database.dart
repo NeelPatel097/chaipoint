@@ -1,3 +1,4 @@
+import 'package:chaipoint/models/user_new.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:chaipoint/models/chai.dart';
 
@@ -28,10 +29,26 @@ class DatabaseService {
     }).toList();
   }
 
+  // userData from snapshot
+  UserData _userDataFromSnapshot(DocumentSnapshot snapshot)  {
+    return UserData(
+      uid: uid,
+      name: snapshot.data()['name'],
+        sugars: snapshot.data()['sugars'],
+        strength: snapshot.data()['strength']
+    );
+  }
+
   //get chai stream
   Stream<List<Chai>> get chai {
     return chaiCollection.snapshots()
     .map(_chaiListFromSnapshot);
+  }
+  
+  // get user doc stream
+  Stream<UserData> get userData {
+    return chaiCollection.doc(uid).snapshots()
+        .map(_userDataFromSnapshot);
   }
 
 }
